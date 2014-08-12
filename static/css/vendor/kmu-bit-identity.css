@@ -51,7 +51,10 @@ DIV.wrapper-footer LI {
 #footerRef NAV.nav-colophon LI A {
 	text-decoration:none !important;
 	border:none !important;
-	color:#737373 !important;
+	color:#737373;
+}
+#footerRef NAV.nav-colophon LI A:hover {
+	color:#404040;
 }
 #footerRef A#footerEdx {
 	width:119px;
@@ -69,6 +72,7 @@ DIV.wrapper-footer LI {
 #footerRef .footerCopyright {
 	font-size:10px;
 	line-height:28px;
+	color:#737373;
 }
 #footerRef NAV LI {
 	float:right;
@@ -113,7 +117,7 @@ HEADER.global.slim H1.logo:before {
 	top:-3px;
 }
 HEADER.global.slim H1.logo:after {
-	width:10px;
+	width:8px;
 	height:40px;
 	position:absolute;
 	z-index:1;
@@ -134,13 +138,20 @@ HEADER.global.slim .nav-global {
 HEADER.global.slim .nav-courseware {
 	margin-top:-3px;
 }
+HEADER.global OL.user {
+	margin-top:8px;
+}
 HEADER.global.slim H1.logo,
 HEADER.global.slim OL.user {
 	margin-top:0;
 }
 
 /* Courseware */
-NAV.course-material OL.course-tabs LI A.active {
+NAV.course-material OL.course-tabs LI A:hover {
+	background:rgba(0, 0, 0, 0.09);
+}
+NAV.course-material OL.course-tabs LI A.active,
+NAV.course-material OL.course-tabs LI A.active:hover {
 	background-color:rgba(0, 66, 91, 0.88);
 	background-image:-webkit-linear-gradient(top, rgba(0, 66, 91, 0.88), rgba(0, 97, 148, 0.88));
 	background-image:-moz-linear-gradient(top, rgba(0, 66, 91, 0.88), rgba(0, 97, 148, 0.88));
