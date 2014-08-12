@@ -2,8 +2,148 @@
  * su-identity.css
  * ========================================================
  * Custom base styles
- * Last edited: 4/19/2013 by Nate Hardison <nate@edx.org>
+ * Last edited: 8/4/2014 by Minseok Lee <://xmagi.net>
  */
+
+/* Custom new styles */
+HEADER.global IMG#BITedx_logo_default {
+	width:190px;
+	height:48px;
+	display:block;
+}
+HEADER.global IMG#BITedx_logo_mini {
+	width:79px;
+	height:30px;
+	display:none;
+}
+HEADER.global.slim IMG#BITedx_logo_default {
+	display:none !important;
+}
+HEADER.global.slim IMG#BITedx_logo_mini {
+	display:block !important;
+}
+DIV.wrapper-footer {
+	background:rgba(255, 255, 255, 0.85);
+	padding:30px;
+	color:#737373;
+	box-shadow:none;
+	border:0;
+}
+DIV.wrapper-footer OL,
+DIV.wrapper-footer LI {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#footerKMU {
+	float:left;
+	font-size:11px;
+	line-height:20px;
+}
+#footerKMU IMG#footerInstMark {
+	width:225px;
+	height:50px;
+	margin-bottom:15px;
+}
+#footerRef {
+	text-align:right;
+}
+#footerRef A {
+	text-decoration:none !important;
+	color:#737373 !important;
+}
+#footerRef A#footerEdx {
+	width:119px;
+	height:30px;
+	margin:8px 0 22px 0;
+	display:inline-block;
+}
+#footerRef A#footerEdx SPAN {
+	display:none;
+}
+#footerRef A#footerEdx IMG {
+	width:119px;
+	height:30px;
+}
+#footerRef .footerCopyright {
+	font-size:10px;
+	line-height:28px;
+}
+#footerRef NAV LI {
+	float:right;
+	font-size:14px;
+	text-align:right;
+	margin-left:20px;
+}
+#footerRef NAV OL:after {
+	clear:both;
+	content:'';
+	display:block;
+}
+
+/* Overridden styles */
+HEADER.global {
+	height:80px;
+	border:0;
+	box-shadow:none;
+}
+HEADER.global.slim {
+	height:50px;
+	border:0;
+	box-shadow:none;
+	background:#fff;
+	padding:0;
+}
+HEADER.global NAV {
+	padding-top:16px;
+}
+HEADER.global.slim NAV {
+	padding-top:10px;
+}
+HEADER.global.slim H1.logo:before {
+	/* failback colour */
+	background:#ccc;
+	/* cross-browser graidents */
+	background:-webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgb(204, 204, 204), rgba(255, 255, 255, 0));
+	background:-moz-linear-gradient(top, rgba(255, 255, 255, 0), rgb(204, 204, 204), rgba(255, 255, 255, 0));
+	background:-ms-linear-gradient(top, rgba(255, 255, 255, 0), rgb(204, 204, 204), rgba(255, 255, 255, 0));
+	background:-o-linear-gradient(top, rgba(255, 255, 255, 0), rgb(204, 204, 204), rgba(255, 255, 255, 0));
+	background:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(204, 204, 204), rgba(255, 255, 255, 0));
+	top:-3px;
+}
+HEADER.global.slim H1.logo:after {
+	width:10px;
+	height:40px;
+	position:absolute;
+	z-index:1;
+	top:-5px;
+	left:96px;
+	background:-webkit-radial-gradient(0, farthest-side, rgb(243, 243, 243), rgba(255, 255, 255, 0));
+	background:-moz-radial-gradient(0, farthest-side, rgb(243, 243, 243), rgba(255, 255, 255, 0));
+	background:-ms-radial-gradient(0, farthest-side, rgb(243, 243, 243), rgba(255, 255, 255, 0));
+	background:-o-radial-gradient(0, farthest-side, rgb(243, 243, 243), rgba(255, 255, 255, 0));
+	background:radial-gradient(0, farthest-side, rgb(243, 243, 243), rgba(255, 255, 255, 0));
+}
+HEADER.global.slim H2 {
+	margin-top:6px;
+}
+HEADER.global.slim .nav-global {
+	margin-top:4px;
+}
+HEADER.global.slim .nav-courseware {
+	margin-top:-3px;
+}
+HEADER.global.slim H1.logo,
+HEADER.global.slim OL.user {
+	margin-top:0;
+}
+
+/* Fix styles for Noto Sans */
+HEADER.global.slim H2 {
+	font-weight:normal;
+}
+
+
 
 #su-header .su-container,
 #su-footer .su-container {

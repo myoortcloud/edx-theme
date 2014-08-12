@@ -7,19 +7,12 @@
 <%inherit file="/navigation.html"/>
 
 ## Toss the Stanford brand bar on top of the page
-<%block name="navigation_top">
-  <div id="su-header">
-    <div class="su-container">
-      <a href="http://www.stanford.edu">
-        <img src="https://www.stanford.edu/su-identity/images/brandbar-stanford-logo@2x.png" alt="Stanford University" width="152" height="23">
-      </a>
-    </div>
-  </div>
-</%block>
+<%block name="navigation_top"></%block>
 
 ## TODO: this will eventually be moved to the Sass
 <%block name="navigation_logo">
-  <img src="${static.url('themes/stanford/images/stanford-S-logo.png')}" height="35" alt="${_('{platform_name}, Courses List').format(platform_name='Stanford Online')}" />
+  <img src="${static.url('themes/{theme_name}/images/bitedx-logo@2x.png'.format(theme_name=settings.THEME_NAME))}" width="190" height="48" alt="${_('{platform_name}, Courses List').format(platform_name='BIT edx')}" id="BITedx_logo_default" />
+  <img src="${static.url('themes/{theme_name}/images/bitedx-logo-mini@2x.png'.format(theme_name=settings.THEME_NAME))}" width="79" height="30" alt="${_('{platform_name}, Courses List').format(platform_name='BIT edx')}" id="BITedx_logo_mini" />
 </%block>
 
 ## We don't want extra links inside the navigation dropdown

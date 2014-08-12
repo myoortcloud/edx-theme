@@ -1,5 +1,5 @@
 /****************************************************************************************************
-*   Stanford Theming File
+*   KMU BIT Theming File
 *
 *   Contains all the theme color definitions for the Stanford Open Source MOOC Project
 *
@@ -10,18 +10,18 @@
 //-----------------
 
 //Cardinal Color Variables
-$cardinal-red: #8C1515;
-$dark-red: #820000; //Link Color
-$cardinal-light: #c83737; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
-$cardinal-bg: #e9afaf; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
+$bit-blue: #105f9c;
+$dark-blue: #0e3b62; //Link Color
+$bit-light: #3782c8; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
+$bit-bg: #d4e4eb; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 
 //Beige Color Variables
-$beige: #9d9573;
+$beige: #a6a6a6;
 $beige-60: lighten($beige, 18.5%); //Main Border/HR Color
 $beige-25: lighten($beige, 25%); 
 
 //Sandstone Color Variables
-$sandstone: #ddcf99;
+$sandstone: #e0e0e0;
 $sandstone-50: lighten($sandstone, 9%);
 $sandstone-25: lighten($sandstone, 20%); //Important Heading BG Color 
 
@@ -43,11 +43,11 @@ $black-80: #585754;
 //  Font Assignment
 //-----------------
 
-$theme-sans-font: 'Source Sans';
+$theme-sans-font: 'Noto Sans';
 $sans-serif: $theme-sans-font, $sans-serif;
 $body-font-family: $sans-serif;
 
-$theme-serif-font: 'Crimson Text';
+$theme-serif-font: 'Noto Serif';
 $serif: $theme-serif-font, $serif;
 
 
@@ -62,7 +62,7 @@ $container-bg: $gray-1;
 $login-register-bg: $gray-1;
 $content-wrapper-bg: $gray-1;
 $header-image: none;
-$header-bg: transparentize(lighten($sandstone, 18.5%), .25);
+$header-bg: #ededed;
 $courseware-header-image: none;
 $courseware-header-bg: transparentize(lighten($sandstone, 18.5%), .25);
 $footer-bg: $sandstone-25;
@@ -81,18 +81,18 @@ $base-font-color: $black;
 $lighter-base-font-color: $black-80;
 $very-light-text: $gray-1;
 
-$link-color: $dark-red;
-$link-color-d1: $dark-red;
-$link-hover: $cardinal-light;
-$site-status-color: $cardinal-bg;
+$link-color: $dark-blue;
+$link-color-d1: $dark-blue;
+$link-hover: $bit-light;
+$site-status-color: $bit-bg;
 
-$header-graphic-super-color: $dark-red;
+$header-graphic-super-color: $dark-blue;
 $header-graphic-sub-color: $lighter-base-font-color;
 
-$header-link-color: $dark-red;
-$header-link-hover: $cardinal-light;
+$header-link-color: $dark-blue;
+$header-link-hover: $bit-light;
 
-$button-color: $cardinal-red;
+$button-color: $bit-blue;
 $button-archive-color: $gray-3;
 
 $shadow-color: $gray;
@@ -103,16 +103,16 @@ $button-bg-color: $gray-3;
 $button-bg-hover-color: $gray-1;
 
 // actions - primary
-$action-primary-bg: $cardinal-red;
+$action-primary-bg: $bit-blue;
 $action-primary-fg: $gray-2;
 $action-primary-shadow: none;
 
 // focused - hover/active pseudo states
-$action-primary-focused-bg: $dark-red;
+$action-primary-focused-bg: $dark-blue;
 $action-primary-focused-fg: $gray-1;
 
 // current or active navigation item
-$action-primary-active-bg: $dark-red;
+$action-primary-active-bg: $dark-blue;
 $action-primary-active-fg: $gray-1;
 $action-primary-active-shadow: none;
 $action-primary-active-focused-fg: $gray-2;
@@ -185,12 +185,12 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/stanford/images/stanford-pano.jpg');
+$homepage-bg-image: url('../themes/kmu-bit/images/kmu-pano.jpg');
 
 $login-banner-image: none;
 $register-banner-image: none;
 
-$video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
+$video-thumb-url: '../themes/kmu-bit/images/stanford-video-thumb.png';
 
 //-----------------
 //  Mixin Styles
@@ -206,19 +206,3 @@ $video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
     margin: 0 !important;
     text-align: right;
 }
-
-//-----------------------
-//  Stanford Extra Styles
-//-----------------------
-#stanford-footer-edx-image {
-    display: block;
-    height: 40px;
-    width: 120px;
-    padding-bottom: 10px;
-    float: right;
-    background-image: url("https://files.edx.org/openedx-logos/edx-openedx-logo-tag-light.png");
-    background-size: 120px 40px;
-    background-repeat: no-repeat;
-    border: none;
-}
-
