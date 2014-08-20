@@ -1,0 +1,12 @@
+## mako
+<%!
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+%>
+<%inherit file="/main.html" />
+
+<%namespace name='static' file='/static_content.html'/>
+
+<%block name="title"><title>${_('Honor Code')}</title></%block>
+
+<p>${_('u-ang du-gum T-T')}</p>
