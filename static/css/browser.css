@@ -1,30 +1,31 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300);
+/* RESET */
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6,
+pre, form, p, blockquote, fieldset, input, abbr, article, aside, command,
+details, figcaption, figure, footer, header, hgroup, mark, meter, nav,
+output, progress, section, summary, time {
+    margin:0;
+    padding:0;
+}
 
-#BrsrMsg {
-	width:100%;
-	height:100%;
+BODY {
 	background:#f8f8f8;
 
 	font-family:Roboto, san-serif, 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, Verdana;
 	font-size:28px;
 	font-weight:300;
 	color:#3f4753;
-	line-height:40px;
-
-	top:0;
-	left:0;
-	position:absolute;
-	z-index:9999;
 }
 #BrsrMsgBody {
 	width:820px;
 	height:380px;
 	text-align:center;
+	line-height:40px;
 
 	top:50%;
 	left:50%;
 	position:absolute;
-	margin:-190px 0 0 -410px;
+	margin:-170px 0 0 -410px;
 }
 #BrsrMsgBody IMG#BrsrMsgTitle {
 	width:594px;
@@ -41,37 +42,30 @@
 	*zoom:1;
 }
 #BrsrMsgLink A {
-	text-indent:-9999px;
 	width:71px;
 	height:71px;
-	background-position:0 0;
-	background-repeat:no-repeat;
-	background-size:100% 100%;
 	display:block;
 	float:left;
 	margin-right:30px;
+	color:rgb(255, 255, 255);
+	text-decoration:none;
 }
-#BrsrMsgLink A.icn_safari {
-	background-image:url('../images/browser-icons-safari@2x.png');
+#BrsrMsgLink A IMG {
+	width:71px;
+	height:71px;
+	border:0;
 }
-#BrsrMsg #BrsrMsgBody #BrsrMsgLink A.icn_ff {
-	background-image:url('../images/browser-icons-ff@2x.png');
-}
-#BrsrMsg #BrsrMsgBody #BrsrMsgLink A.icn_chrome {
-	background-image:url('../images/browser-icons-chrome@2x.png');
-}
-#BrsrMsg #BrsrMsgBody #BrsrMsgLink A.icn_ie {
+#BrsrMsgLink A.icn_ie {
 	margin-right:auto;
-	background-image:url('../images/browser-icons-ie@2x.png');
 }
 
-#BrsrMsg .platformMsg {
+.platformMsg {
 	width:260px;
 	height:20px;
 	padding:6px;
 	background:rgb(65, 65, 65);
 	font-size:16px;
-	line-height:21px;
+	line-height:20px;
 	text-indent:0;
 
 	-webkit-border-radius:4px;
