@@ -1,13 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
 
 #BrsrMsg {
 	width:100%;
 	height:100%;
 	background:#f8f8f8;
 
-	font-family:'Noto Sans', san-serif, 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, Verdana;
+	font-family:Roboto, san-serif, 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, Verdana;
 	font-size:28px;
-	font-weight:400;
+	font-weight:300;
 	color:#3f4753;
 	line-height:40px;
 
@@ -16,9 +16,8 @@
 	position:absolute;
 	z-index:9999;
 }
-#BrsrMsg #BrsrMsgBody {
+#BrsrMsgBody {
 	width:820px;
-	min-width:900px;
 	height:380px;
 	text-align:center;
 
@@ -27,11 +26,77 @@
 	position:absolute;
 	margin:-190px 0 0 -410px;
 }
-#BrsrMsg #BrsrMsgBody IMG#BrsrMsgTitle {
+#BrsrMsgBody IMG#BrsrMsgTitle {
 	width:594px;
 	height:42px;
 	margin-bottom:20px;
 }
 
-#BrsrMsg #BrsrMsgBody #BrsrMsgLink {
+#BrsrMsgLink {
+	width:375px;
+	height:71px;
+	display:inline-block;
+	margin-top:60px;
+	*display:inline;
+	*zoom:1;
+}
+#BrsrMsgLink A {
+	text-indent:-9999px;
+	width:71px;
+	height:71px;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	display:block;
+	float:left;
+	margin-right:30px;
+}
+#BrsrMsgLink A.icn_safari {
+	background-image:url('../images/browser-icons-safari@2x.png');
+}
+#BrsrMsg #BrsrMsgBody #BrsrMsgLink A.icn_ff {
+	background-image:url('../images/browser-icons-ff@2x.png');
+}
+#BrsrMsg #BrsrMsgBody #BrsrMsgLink A.icn_chrome {
+	background-image:url('../images/browser-icons-chrome@2x.png');
+}
+#BrsrMsg #BrsrMsgBody #BrsrMsgLink A.icn_ie {
+	margin-right:auto;
+	background-image:url('../images/browser-icons-ie@2x.png');
+}
+
+#BrsrMsg .platformMsg {
+	width:260px;
+	height:20px;
+	padding:6px;
+	background:rgb(65, 65, 65);
+	font-size:16px;
+	line-height:21px;
+	text-indent:0;
+
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-ms-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+
+	color:rgb(255, 255, 255);
+	top:350px;
+	left:274px;
+	position:absolute;
+}
+
+A.icn_safari .platformMsg.safari {
+	display:none;
+}
+A.icn_safari:hover .platformMsg.safari {
+	display:block;
+}
+A.icn_ie .platformMsg.ie {
+	width:360px !important;
+	left:224px !important;
+	display:none;
+}
+A.icn_ie:hover .platformMsg.ie {
+	display:block;
 }
