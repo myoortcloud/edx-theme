@@ -20,10 +20,9 @@
 <meta name="msapplication-TileColor" content="#2d89ef" />
 <meta name="msapplication-TileImage" content="${static.url('themes/kmu-bit/images/favicons/mstile-144x144.png')}" />
 <!--[if lte IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      parent.top.location = '/browser';
-    });
-  </script>
+<script type="text/javascript">
+window.onload = function () {
+  parent.top.location = '/browser';
+};
+</script>
 <![endif]-->
