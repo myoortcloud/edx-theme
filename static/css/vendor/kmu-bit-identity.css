@@ -28,6 +28,7 @@ DIV.wrapper-footer {
 	color:#737373;
 	box-shadow:none;
 	border:0;
+	min-width:880px;
 }
 DIV.wrapper-footer OL,
 DIV.wrapper-footer LI {
@@ -86,15 +87,17 @@ DIV.wrapper-footer LI {
 	display:block;
 }
 .httpErr {
-	font-family:'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, san-serif;
+	font-family:'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, san-serif !important;
 	font-weight:200;
-	font-size:28px;
+	font-size:18px;
 	color:#747474;
-	line-height:40px;
+	line-height:28px;
+	text-align:center;
+	padding:100px 0 100px 0;
 }
 .httpErr .errTitle {
-	font-size:45px;
-	line-height:90px;
+	font-size:30px;
+	line-height:60px;
 	color:#343434;
 }
 
