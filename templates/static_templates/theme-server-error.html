@@ -1,0 +1,18 @@
+## mako
+<%!
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+%>
+<%namespace name='static' file='/static_content.html'/>
+
+<%inherit file="/main.html" />
+
+<%block name="pagetitle">${_("Error 500")}</%block>
+
+<section id="HttpErr-500" class="httpErr">
+
+	<span class="errTitle">Temporary Error (500)</span>
+    The server encountered a temporary error and could not complete your request.<br>
+    Please try again in a few minutes. We’re sorry for the inconvenience.
+
+</section>

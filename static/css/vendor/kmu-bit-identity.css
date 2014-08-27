@@ -85,6 +85,18 @@ DIV.wrapper-footer LI {
 	content:'';
 	display:block;
 }
+.httpErr {
+	font-family:'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, san-serif;
+	font-weight:200;
+	font-size:28px;
+	color:#747474;
+	line-height:40px;
+}
+.httpErr .errTitle {
+	font-size:45px;
+	line-height:90px;
+	color:#343434;
+}
 
 /* Overridden styles */
 HEADER.global {
