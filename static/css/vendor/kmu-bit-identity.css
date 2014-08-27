@@ -87,7 +87,7 @@ DIV.wrapper-footer LI {
 	display:block;
 }
 .httpErr {
-	font-family:'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, san-serif !important;
+	font-family:'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, san-serif;
 	font-weight:200;
 	font-size:18px;
 	color:#747474;
