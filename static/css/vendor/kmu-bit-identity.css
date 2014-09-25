@@ -157,7 +157,8 @@ HEADER.global.slim .nav-global {
 HEADER.global.slim .nav-courseware {
 	margin-top:-3px;
 }
-HEADER.global OL.user {
+HEADER.global OL.user,
+HEADER.global-new OL.user {
 	margin-top:8px;
 }
 HEADER.global.slim H1.logo,
