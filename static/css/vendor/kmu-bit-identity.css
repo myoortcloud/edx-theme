@@ -6,12 +6,14 @@
  */
 
 /* Custom new styles */
-HEADER.global IMG#BITedx_logo_default {
+HEADER.global IMG#BITedx_logo_default,
+HEADER.global-new IMG#BITedx_logo_default {
 	width:190px;
 	height:48px;
 	display:block;
 }
-HEADER.global IMG#BITedx_logo_mini {
+HEADER.global IMG#BITedx_logo_mini,
+HEADER.global-new IMG#BITedx_logo_mini {
 	width:79px;
 	height:30px;
 	display:none;
@@ -102,7 +104,8 @@ DIV.wrapper-footer LI {
 }
 
 /* Overridden styles */
-HEADER.global {
+HEADER.global,
+HEADER.global-new {
 	height:80px;
 	border:0;
 	box-shadow:none;
@@ -114,7 +117,8 @@ HEADER.global.slim {
 	background:#fff;
 	padding:0;
 }
-HEADER.global NAV {
+HEADER.global NAV,
+HEADER.global-new NAV {
 	padding-top:16px;
 }
 HEADER.global.slim NAV {
