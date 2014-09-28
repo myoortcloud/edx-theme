@@ -185,6 +185,9 @@ HEADER.global-new .nav-courseware li a.nav-courseware-button {
 HEADER.global-new .nav-courseware li a.nav-courseware-button:hover {
 	border-color:#58c3f0;
 }
+HEADER.global-new .nav-courseware li a.nav-courseware-button:active {
+	background-color:#666;
+}
 
 /* Courseware */
 NAV.course-material OL.course-tabs LI A:hover {
