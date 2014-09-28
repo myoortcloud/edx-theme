@@ -174,13 +174,13 @@ HEADER.global-new .nav-courseware li a {
 	font-weight:400;
 	text-decoration:none !important;
 	color:#394c5b !important;
-	margin-top:-20px !important;
 }
 HEADER.global-new .nav-courseware li a.nav-courseware-button {
 	padding:7px 20px 7px 20px !important;
 	border:2px solid #ededed;
 	background-color:#797979;
 	color:#fff !important;
+	margin-top:-20px !important;
 }
 HEADER.global-new .nav-courseware li a.nav-courseware-button:hover {
 	border-color:#58c3f0;
