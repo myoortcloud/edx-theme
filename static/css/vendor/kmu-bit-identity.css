@@ -166,6 +166,26 @@ HEADER.global.slim OL.user {
 	margin-top:0;
 }
 
+/* Additional styles for edx new-global menus */
+HEADER.global-new .nav-global li a,
+HEADER.global-new .nav-courseware li a {
+	font-size:16px;
+	font-family:"Noto Serif", "Open Sans",Arial,Helvetica,sans-serif;
+	font-weight:400;
+	text-decoration:none !important;
+	color:#394c5b !important;
+	margin-top:-20px !important;
+}
+HEADER.global-new .nav-courseware li a.nav-courseware-button {
+	padding:7px 20px 7px 20px !important;
+	border:2px solid #ededed;
+	background-color:#797979;
+	color:#fff !important;
+}
+HEADER.global-new .nav-courseware li a.nav-courseware-button:hover {
+	border-color:#58c3f0;
+}
+
 /* Courseware */
 NAV.course-material OL.course-tabs LI A:hover {
 	background:rgba(0, 0, 0, 0.09);
